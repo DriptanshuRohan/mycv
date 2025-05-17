@@ -1,0 +1,54 @@
+h1 {
+  color: #ff5733;
+  font-size: 2rem;
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 5px; /* Reduce space between cards */
+  padding: 10px; /* Less outer padding */
+}
+
+
+
+img:hover {
+  transform: scale(1.05);
+}
+
+mat-card img {
+  width: 100%;
+  height: auto; /* Allow image to adjust height dynamically */
+  object-fit: contain; /* Ensures full image is visible */
+}
+
+img {
+  width: 300px;  
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  height: auto; /* Allow height to adjust for text */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Ensures text stays below image */
+  align-items: center;
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+mat-card-content {
+  font-size: 1rem;
+  padding: 10px;
+}

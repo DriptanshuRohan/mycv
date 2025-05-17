@@ -1,0 +1,10 @@
+<h1>Welcome to Shrishti Decors!</h1>
+<p>Your creative space for decoration templates.</p>
+
+<div class="gallery">
+  <mat-card *ngFor="let image of images">
+    <img mat-card-image [src]="image.src" [alt]="image.alt">
+    <mat-card-title>{{ image.title }}</mat-card-title>
+    <mat-card-content>{{ image.description }}</mat-card-content>
+  </mat-card>
+</div>
